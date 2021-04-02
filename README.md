@@ -11,7 +11,17 @@ These are the questions I have:
 
 https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/01-prerequisites.md
 
-- No questions
+## Google Cloud Platform
+
+No questions
+
+## Google Cloud Platform SDK
+
+No questions
+
+## Running Commands in Parallel with tmux
+
+No questions
 
 ## Step 2 : Installing the Client Tools
 
