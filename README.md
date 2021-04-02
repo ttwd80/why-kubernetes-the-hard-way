@@ -48,6 +48,7 @@ gcloud compute networks create kubernetes-the-hard-way --subnet-mode custom
 ```
 
 Q: Not sure about the `--subnet-mode custom` part.
+
 A: `gcloud compute networks create --help` shows that there are 3 subnet-mode values: `auto`/`custom`/`legacy`. Avoid `legacy` as it is Deprecated.
 
 #### Create a subnet
