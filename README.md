@@ -41,16 +41,35 @@ No questions
 
 ### Virtual Private Cloud Network
 
+#### Create the VPC
+
 ```bash
 gcloud compute networks create kubernetes-the-hard-way --subnet-mode custom
 ```
 
 Q: Not sure about the `--subnet-mode custom` part.
+A: `gcloud compute networks create --help` shows that there are 3 subnet-mode values: `auto`/`custom`/`legacy`. Avoid `legacy` as it is Deprecated.
+
+#### Create a subnet
+
+```bash
+gcloud compute networks subnets create kubernetes \
+  --network kubernetes-the-hard-way \
+  --range 10.240.0.0/24
+```
+
+No questions
 
 ### Firewall Rules
+
 ### Kubernetes Public IP Address
+
 ## Compute Instances
+
 ### Kubernetes Controllers
+
 ### Kubernetes Workers
+
 ### Verification
+
 ## Configuring SSH Access
