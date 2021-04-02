@@ -1,0 +1,12 @@
+docker pull gcr.io/google.com/cloudsdktool/cloud-sdk:latest
+docker run --rm gcr.io/google.com/cloudsdktool/cloud-sdk:latest gcloud version
+docker run -it --rm -v "$(pwd)":/work -v "${HOME}/.config/gcloud":/root/.config/gcloud gcr.io/google.com/cloudsdktool/cloud-sdk:latest /bin/bash
+
+apt-get install sudo wget apt-utils dialog curl -y
+wget https://github.com/cloudflare/cfssl/releases/download/v1.5.0/cfssljson_1.5.0_linux_amd64
+mv cfssljson_1.5.0_linux_amd64 cfssljson
+wget https://github.com/cloudflare/cfssl/releases/download/v1.5.0/cfssl_1.5.0_linux_amd64
+mv cfssl_1.5.0_linux_amd64 cfssl
+chmod +x cfssljson cfssl
+sudo mv cfssl cfssljson /usr/local/bin/
+

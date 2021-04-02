@@ -34,3 +34,23 @@ No questions
 ## Install kubectl
 
 No questions
+
+## Step 3 : Provisioning Compute Resources
+
+## Networking
+
+### Virtual Private Cloud Network
+
+```bash
+gcloud compute networks create kubernetes-the-hard-way --subnet-mode custom
+```
+
+Q: Not sure about the `--subnet-mode custom` part.
+
+### Firewall Rules
+### Kubernetes Public IP Address
+## Compute Instances
+### Kubernetes Controllers
+### Kubernetes Workers
+### Verification
+## Configuring SSH Access
